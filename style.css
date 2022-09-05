@@ -5,5 +5,12 @@
 }
 
 .grid-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(16, 30px);
+    grid-template-rows: repeat(16, 30px);
+}
+
+.square {
+    border: 1px solid black;
+    padding: 10px;
 }
