@@ -7,9 +7,6 @@ for (let i = 0; i < 256; i++) {
     const square = document.createElement('div');
     // add a class of "square"
     square.classList.add('square');
-    // style width and height for a square
-    square.style.width = '10px';
-    square.style.height = '10px';
     // assign number id to square
     square.id = `square-container-${i}`;
     // add square to grid container
