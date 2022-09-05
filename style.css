@@ -4,12 +4,14 @@
     box-sizing: border-box;
 }
 
+/* grid that holds the squares */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(16, 30px);
     grid-template-rows: repeat(16, 30px);
 }
 
+/* properties of child squares */
 .square {
     border: 1px solid black;
     padding: 10px;
