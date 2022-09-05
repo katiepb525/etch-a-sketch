@@ -10,5 +10,6 @@ for (let i = 0; i < 256; i++) {
     square.height = '10px';
     // assign number id to square
     square.id = `square-container-${i}`;
-
+    // add square to grid container
+    grid.appendChild(square);
 }
