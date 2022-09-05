@@ -5,5 +5,7 @@ for (let i = 0; i < 256; i++) {
     // style width and height for a square
     square.width = '10px';
     square.height = '10px';
+    // assign number id to square
+    square.id = `square-container-${i}`;
 
 }
