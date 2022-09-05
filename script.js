@@ -5,6 +5,8 @@ const grid = document.querySelector('.grid-container')
 for (let i = 0; i < 256; i++) {
     // variable for single square div
     const square = document.createElement('div');
+    // add a class of "square"
+    square.classList.add('square');
     // style width and height for a square
     square.style.width = '10px';
     square.style.height = '10px';
