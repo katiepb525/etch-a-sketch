@@ -7,10 +7,12 @@ const changeGrid = document.querySelector('.grid-change');
 
 // add click listener for changeGrid (work in progress)
 changeGrid.addEventListener("click", () => {
-    pixelAmount = prompt("enter a new pixel amount!");
-
+    pixelAmount = prompt("enter a new pixel amount per side!");
+    if (pixelAmount > 100 || pixelAmount < 5) {
+        alert("number out of bounds! between 5 and 100. please try again..");
+        pixelAmount = prompt("enter a new pixel amount per side!");
+    }
 }
-
 );
 
 
