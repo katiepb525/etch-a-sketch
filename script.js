@@ -2,7 +2,10 @@
 const grid = document.querySelector('.grid-container');
 // select "grid-change" button in html
 const changeGrid = document.querySelector('.grid-change');
+// add click listener for changeGrid
+changeGrid.addEventListener("click", () =>
 
+);
 
 // create enough squares for a 16^2 grid using a loop
 for (let i = 0; i < 256; i++) {
