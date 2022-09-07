@@ -6,7 +6,8 @@ const grid = document.querySelector('.grid-container');
 const changeGrid = document.querySelector('.grid-change');
 // add click listener for changeGrid
 changeGrid.addEventListener("click", () =>
-
+    pixelAmount = prompt("enter a new pixel amount!");
+    
 );
 
 
