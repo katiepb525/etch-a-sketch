@@ -1,3 +1,6 @@
+//add variable for amount of "pixels" for grid to have
+let pixelAmount = 16;
+
 // select "grid-container" div in html
 const grid = document.querySelector('.grid-container');
 // select "grid-change" button in html
@@ -7,8 +10,10 @@ changeGrid.addEventListener("click", () =>
 
 );
 
+
+
 // create enough squares for a 16^2 grid using a loop
-for (let i = 0; i < 256; i++) {
+for (let i = 0; i < (pixelAmount * 2); i++) {
     // variable for single square div
     const square = document.createElement('div');
     // add a class of "square"
