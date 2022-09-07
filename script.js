@@ -20,9 +20,6 @@ for (let i = 0; i < (Math.pow(pixelAmount, 2)); i++) {
     const square = document.createElement('div');
     // add a class of "square"
     square.classList.add('square');
-    // make grid-template-columns/row pixelAmount to begin with
-    grid.getElementsByClassName.gridTemplateColumns = `repeat(${pixelAmount}, 30px)`
-    grid.getElementsByClassName.gridTemplateRows = `repeat(${pixelAmount}, 30px)`
 
     // add event listener for when square is hovered over, sets color to black
     square.addEventListener("mouseover", () => square.setAttribute("style", "background-color: black"))
