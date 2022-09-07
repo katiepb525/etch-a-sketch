@@ -30,8 +30,8 @@ function getValidPixel() {
     }
 }
 
+// create enough squares for a (pixelAmount)^2 grid using a loop
 function createGrid(pixelAmount) {
-    // create enough squares for a (pixelAmount)^2 grid using a loop
     for (let i = 0; i < (Math.pow(pixelAmount, 2)); i++) {
         // variable for single square div
         const square = document.createElement('div');
