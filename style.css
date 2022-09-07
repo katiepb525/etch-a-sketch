@@ -16,3 +16,8 @@
     border: 1px solid black;
     padding: 10px;
 }
+
+/* change color of square on hover */
+.square:hover {
+    background-color: black;
+}
