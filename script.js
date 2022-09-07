@@ -1,4 +1,4 @@
-// select "grid-container" in html
+// select "grid-container" div in html
 const grid = document.querySelector('.grid-container');
 
 // create enough squares for a 16^2 grid using a loop
