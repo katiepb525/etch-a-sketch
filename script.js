@@ -7,6 +7,8 @@ for (let i = 0; i < 256; i++) {
     const square = document.createElement('div');
     // add a class of "square"
     square.classList.add('square');
+    // add event listener for when square is hovered over, sets color to black
+    square.addEventListener("mouseover", () => square.setAttribute("style", "background-color: black"))
     // assign number id to square
     square.id = `square-container-${i}`;
     // add square to grid container
