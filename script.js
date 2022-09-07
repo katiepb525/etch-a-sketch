@@ -15,7 +15,7 @@ grid.style.gridTemplateColumns = `repeat(${pixelAmount}, 30px)`
 grid.style.gridTemplateRows = `repeat(${pixelAmount}, 30px)`
 
 // create enough squares for a 16^2 grid using a loop
-for (let i = 0; i < (pixelAmount * 2); i++) {
+for (let i = 0; i < (Math.pow(pixelAmount, 2)); i++) {
     // variable for single square div
     const square = document.createElement('div');
     // add a class of "square"
