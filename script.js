@@ -5,6 +5,9 @@ const grid = document.querySelector('.grid-container');
 // select "grid-change" button in html
 const changeGrid = document.querySelector('.grid-change');
 
+//check if pixel amount is valid
+let pixelIsValid = false;
+
 // add click listener for changeGrid (work in progress)
 changeGrid.addEventListener("click", () => {
     pixelAmount = prompt("enter a new pixel amount per side!");
