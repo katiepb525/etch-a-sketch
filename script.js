@@ -4,11 +4,14 @@ let pixelAmount = 16;
 const grid = document.querySelector('.grid-container');
 // select "grid-change" button in html
 const changeGrid = document.querySelector('.grid-change');
-// add click listener for changeGrid (work in progress)
-// changeGrid.addEventListener("click", () =>
-//     pixelAmount = prompt("enter a new pixel amount!");
 
-// );
+// add click listener for changeGrid (work in progress)
+changeGrid.addEventListener("click", () => {
+    pixelAmount = prompt("enter a new pixel amount!");
+
+}
+
+);
 
 
 // make grid-template-columns/row pixelAmount to begin with
