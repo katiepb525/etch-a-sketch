@@ -45,6 +45,10 @@ function createGrid(pixelAmount) {
         // add square to grid container
         grid.appendChild(square);
     }
+    // make grid-template-columns/row pixelAmount
+    grid.style.gridTemplateColumns = `repeat(${pixelAmount}, 1fr)`
+    grid.style.gridTemplateRows = `repeat(${pixelAmount}, 1fr)`
+
 
 }
 
