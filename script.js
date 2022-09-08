@@ -55,6 +55,9 @@ function createGrid(pixelAmount) {
 // add click listener for changeGrid (work in progress)
 changeGrid.addEventListener("click", () => {
     getValidPixel();
+    // clear original grid
+    grid.textContent = '';
+    createGrid(pixelAmount);
 }
 );
 
