@@ -5,7 +5,7 @@ const grid = document.querySelector('.grid-container');
 // select "grid-change" button in html
 const changeGridBtn = document.querySelector('.grid-change');
 
-function changeGrid(pixelAmount) {
+function resizeGrid(pixelAmount) {
     // make grid-template-columns/row pixelAmount
     grid.style.gridTemplateColumns = `repeat(${pixelAmount}, 1fr)`
     grid.style.gridTemplateRows = `repeat(${pixelAmount}, 1fr)`
