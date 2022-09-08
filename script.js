@@ -3,7 +3,7 @@ let pixelAmount = 16;
 // select "grid-container" div in html
 const grid = document.querySelector('.grid-container');
 // select "grid-change" button in html
-const changeGrid = document.querySelector('.grid-change');
+const changeGridBtn = document.querySelector('.grid-change');
 
 
 // get a valid pixel amount
