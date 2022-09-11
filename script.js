@@ -1,5 +1,6 @@
 //add variable for amount of "pixels" for grid to have
 let pixelAmount = 16;
+let newPixelAmount = 0;
 // select "grid-container" div in html
 const grid = document.querySelector('.grid-container');
 // select "grid-change" button in html
