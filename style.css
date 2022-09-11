@@ -20,7 +20,6 @@
 /* properties of child squares */
 .square {
     border: 1px solid black;
-    padding: 10px;
 }
 
 /* change color of square on hover
