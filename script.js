@@ -30,33 +30,32 @@ function createGrid(pixelAmount) {
     }
 }
 
-window.onload = function () {
+window.addEventListener('load', () => {
 
-    changeGrid(pixelAmount);
+    resizeGrid(pixelAmount);
     createGrid(pixelAmount);
 
-}
+});
 
 // get a valid pixel amount
 function getValidPixel() {
     // check if pixel amount is valid
     let pixelIsValid = false;
-
     // loop while pixel amount is invalid
     while (pixelIsValid == false) {
-        pixelAmount = prompt("enter a new pixel amount per side!");
+        newPixelAmount = prompt("enter a new pixel amount per side!");
 
-        if (pixelAmount > 100 || pixelAmount < 5) {
+        if (newPixelAmount > 100 || newPixelAmount < 5) {
             alert("number out of bounds! between 5 and 100. please try again..");
             pixelIsValid = false;
 
         }
-        else if (pixelAmount <= 100 && pixelAmount >= 5) {
-            changeGrid();
+        else if (newPixelAmount <= 100 && newPixelAmount >= 5) {
             pixelIsValid = true;
         }
 
         if (pixelIsValid == true) {
+            return newPixelAmount;
             break;
         }
     }
@@ -67,5 +66,6 @@ changeGridBtn.addEventListener("click", () => {
     getValidPixel();
     // clear original grid
     grid.textContent = '';
-    createGrid(pixelAmount);
+    resizeGrid(newPixelAmount);
+    createGrid(newPixelAmount);
 });
