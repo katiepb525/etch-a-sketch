@@ -9,13 +9,14 @@ const changeGridBtn = document.querySelector('.grid-change');
 function resizeGrid(pixelAmount) {
     // make grid-template-columns/row pixelAmount
     grid.style.gridTemplateColumns = `repeat(${pixelAmount}, 1fr)`
+
     grid.style.gridTemplateRows = `repeat(${pixelAmount}, 1fr)`
 
 }
 
 // create enough squares for a (pixelAmount)^2 grid using a loop
 function createGrid(pixelAmount) {
-    for (let i = 0; i < (Math.pow(pixelAmount, 2)); i++) {
+    for (let i = 1; i <= (Math.pow(pixelAmount, 2)); i++) {
         // variable for single square div
         const square = document.createElement('div');
         // add a class of "square"
