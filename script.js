@@ -44,7 +44,7 @@ function createGrid(pixelAmount) {
         // add a class of "square"
         square.classList.add('square');
         // add event listener for when square is hovered over, sets color to black
-        square.addEventListener("mouseover", () => square.setAttribute("style", "background-color: black"))
+        square.addEventListener("mouseover", () => blackColor(square))
         // assign number id to square
         square.id = `square-container-${i}`;
         // add square to grid container
