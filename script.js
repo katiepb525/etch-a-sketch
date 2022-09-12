@@ -5,6 +5,28 @@ let newPixelAmount = 0;
 const grid = document.querySelector('.grid-container');
 // select "grid-change" button in html
 const changeGridBtn = document.querySelector('.grid-change');
+// select "color-rainbow" button in html
+const rainbowColorBtn = document.querySelector('.color-rainbow');
+
+// pick a random color
+
+function pickRandomColor() {
+    return Math.floor(Math.random() * 255);
+}
+
+// set color to a random color
+
+function randomColor(square) {
+    return square.setAttribute("style", `background-color: rgb(${pickRandomColor()},(${pickRandomColor()},(${pickRandomColor()})`)
+}
+
+// set color to black
+
+function blackColor(square) {
+    return square.setAttribute("style", "background-color: black");
+}
+
+// resize the grid
 
 function resizeGrid(pixelAmount) {
     // make grid-template-columns/row pixelAmount
