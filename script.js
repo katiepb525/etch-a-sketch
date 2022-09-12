@@ -90,14 +90,13 @@ changeGridBtn.addEventListener("click", () => {
     grid.textContent = '';
     resizeGrid(newPixelAmount);
     createGrid(newPixelAmount);
+    // make into current pixel amount;
+    pixelAmount = newPixelAmount;
 });
 
-// get each square by class of square in variable
-let square = grid.getElementsByClassName('square');
 
 
 // add click listener for button that changes color to rainbow 
 rainbowColorBtn.addEventListener("click", () => {
-    // set to rainbow 
-    square.setAttribute("style", `background-color: rgb(${pickRandomColor()},(${pickRandomColor()},(${pickRandomColor()})`)
+
 })  
