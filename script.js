@@ -36,20 +36,25 @@ function resizeGrid(pixelAmount) {
 
 }
 
-// create enough squares for a (pixelAmount)^2 grid using a loop
+// create grid using a loop
 function createGrid(pixelAmount) {
     for (let i = 1; i <= (Math.pow(pixelAmount, 2)); i++) {
-        // variable for single square div
-        const square = document.createElement('div');
-        // add a class of "square"
-        square.classList.add('square');
-        // add event listener for when square is hovered over, sets color to black
-        square.addEventListener("mouseover", () => blackColor(square))
-        // assign number id to square
-        square.id = `square-container-${i}`;
-        // add square to grid container
-        grid.appendChild(square);
+        createSquare();
     }
+}
+
+// create the squares
+function createSquare() {
+    // variable for single square div
+    const square = document.createElement('div');
+    // add a class of "square"
+    square.classList.add('square');
+    // add event listener for when square is hovered over, sets color to black
+    square.addEventListener("mouseover", () => blackColor(square))
+    // assign number id to square
+    square.id = `square-container-${i}`;
+    // add square to grid container
+    grid.appendChild(square);
 }
 
 window.addEventListener('load', () => {
