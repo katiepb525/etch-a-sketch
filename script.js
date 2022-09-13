@@ -24,6 +24,23 @@ function blackColor(element) {
     element.style.backgroundColor = "black";
 }
 
+// set bool to store variable grayscale value
+let grayUp = 0.1;
+
+// set color to grayscale
+function grayscaleColor(element) {
+    // if the value of grayUp is greater than 1
+    if (grayUp >= 1) {
+        // set it back to 0.1
+        grayUp = 0.1;
+    }
+    grayUp += 0.1;
+    grayUpText = grayUp.toString();
+    console.log(grayUpText);
+    element.style.backgroundColor = `rgba(0, 0, 0, ${grayUp})`;
+
+}
+
 // resize the grid
 
 function resizeGrid(pixelAmount) {
@@ -56,6 +73,9 @@ function createSquare() {
                 break;
             case rainbowColor:
                 rainbowColor(square);
+                break;
+            case grayscaleColor:
+                grayscaleColor(square);
                 break;
         }
 
