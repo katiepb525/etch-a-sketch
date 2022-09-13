@@ -16,14 +16,14 @@ function pickRandomColor() {
 
 // set color to a random color
 
-function randomColor(square) {
-    return square.setAttribute("style", `background-color: rgb(${pickRandomColor()},(${pickRandomColor()},(${pickRandomColor()})`)
+function randomColor(element) {
+    element.style.backgroundColor = `hsl(${pickRandomColor()}, 100%, 50%)`;
 }
 
 // set color to black
 
-function blackColor(square) {
-    return square.setAttribute("style", "background-color: black");
+function blackColor(element) {
+    element.style.backgroundColor = "black";
 }
 
 // resize the grid
