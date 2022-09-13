@@ -113,5 +113,11 @@ changeGridBtn.addEventListener("click", () => {
 
 // add click listener for button that changes color to rainbow 
 rainbowColorBtn.addEventListener("click", () => {
-
+    if (coloringMode !== rainbowColor) {
+        coloringMode = rainbowColor;
+    }
+    else if (coloringMode == rainbowColor) {
+        coloringMode = blackColor;
+    }
+    console.log(coloringMode);
 })  
