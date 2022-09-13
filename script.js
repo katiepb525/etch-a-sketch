@@ -55,23 +55,22 @@ function createSquare() {
     // add event listener for when square is hovered over, sets color to black
     square.addEventListener("mouseover", () => {
         switch (coloringMode) {
-            case (blackColor):
+            case blackColor:
                 blackColor(square);
                 break;
-            case (rainbowColor):
+            case rainbowColor:
                 rainbowColor(square);
                 break;
         }
 
     })
     // // assign number id to square
-    // square.id = `square-container-${i}`;
+    // square.id = `square - container - ${ i } `;
     // add square to grid container
     grid.appendChild(square);
 }
 
 window.addEventListener('load', () => {
-
     createGrid(pixelAmount);
 
 });
