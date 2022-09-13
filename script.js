@@ -116,4 +116,14 @@ rainbowColorBtn.addEventListener("click", () => {
         coloringMode = blackColor;
     }
     console.log(coloringMode);
-})  
+})
+
+grayscaleColorBtn.addEventListener("click", () => {
+    if (coloringMode !== grayscaleColor) {
+        coloringMode = grayscaleColor;
+    }
+    else if (coloringMode == grayscaleColor) {
+        coloringMode = blackColor;
+    }
+    console.log(coloringMode);
+})
