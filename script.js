@@ -19,7 +19,7 @@ function pickRandomColor() {
 // set color to a random color
 
 function rainbowColor(element) {
-    element.style.backgroundColor = `hsl(${Math.floor(Math.random() * 255)}, 100%, 50%)`;
+    element.style.backgroundColor = `hsl(${Math.floor(Math.random() * 360)}, 100%, 50%)`;
 }
 
 // set color to black
