@@ -7,6 +7,8 @@ const grid = document.querySelector('.grid-container');
 const changeGridBtn = document.querySelector('.grid-change');
 // select "color-rainbow" button in html
 const rainbowColorBtn = document.querySelector('.color-rainbow');
+// store the current "mode" that the squares should be set to
+let coloringMode = blackColor;
 
 // pick a random color
 
