@@ -13,13 +13,13 @@ let coloringMode = blackColor;
 // pick a random color
 
 function pickRandomColor() {
-    Math.floor(Math.random() * 255);
+
 }
 
 // set color to a random color
 
 function rainbowColor(element) {
-    element.style.backgroundColor = `hsl(${pickRandomColor()}, 100%, 50%)`;
+    element.style.backgroundColor = `hsl(${Math.floor(Math.random() * 255)}, 100%, 50%)`;
 }
 
 // set color to black
@@ -53,7 +53,17 @@ function createSquare() {
     // add a class of "square"
     square.classList.add('square');
     // add event listener for when square is hovered over, sets color to black
-    square.addEventListener("mouseover", () => blackColor(square))
+    square.addEventListener("mouseover", () => {
+        switch (coloringMode) {
+            case (blackColor):
+                blackColor(square);
+                break;
+            case (rainbowColor):
+                rainbowColor(square);
+                break;
+        }
+
+    })
     // // assign number id to square
     // square.id = `square-container-${i}`;
     // add square to grid container
