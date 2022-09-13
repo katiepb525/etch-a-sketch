@@ -13,12 +13,12 @@ let coloringMode = blackColor;
 // pick a random color
 
 function pickRandomColor() {
-    return Math.floor(Math.random() * 255);
+    Math.floor(Math.random() * 255);
 }
 
 // set color to a random color
 
-function randomColor(element) {
+function rainbowColor(element) {
     element.style.backgroundColor = `hsl(${pickRandomColor()}, 100%, 50%)`;
 }
 
